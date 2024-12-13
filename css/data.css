@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f6fa;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  max-width: 730px;
+  margin-inline: auto;
+  padding-block: 64px;
+}
+
+.textarea {
+  grid-area: textarea;
+  resize: none;
+  width: 100%;
+  min-height: 96px;
+  border: 1px solid #e9ebf0;
+  border-radius: 8px;
+  padding: 12px 24px;
+  outline: none;
+  cursor: pointer;
+  color: #334253;
+}
+
+.textarea:focus {
+  border: 1px solid #5357b6;
+}
+
+.submitButton {
+  grid-area: button;
+  justify-self: end;
+  background-color: #5357b6;
+  color: #ffffff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.submitButton:hover {
+  background-color: #c5c6ef;
+}
+
+.add-comment {
+  display: grid;
+  grid-template-areas: "profile textarea button";
+  grid-template-columns: max-content auto max-content;
+  gap: 16px;
+  align-items: start;
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+.comment {
+  display: flex;
+  gap: 10px;
+}
+
+.commentHeader {
+  display: flex;
+  gap: 10px; 
+  margin-bottom: 8px; 
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px; 
+}
+
+.username {
+  font-weight: bold;
+  margin-right: 10px; 
+}
+
+.createdAt {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.commentContent {
+  margin: 10px 0;
+}
+
+.score {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 60px;
+}
